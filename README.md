@@ -1,6 +1,10 @@
 # Trading-Application
+
 The application executes third party functions after receiving signals through API.
+
+
 To add new Signals, please follow steps:
+
  	1. Assume Signal as strategies and create a class in package com.app.trading.strategies.
  	2. Implement Interface IAlgo.
  	3. Add the third party functions to be called in executeAlgo method.
@@ -8,6 +12,8 @@ To add new Signals, please follow steps:
  	
 # Requirement
 
-Spring boot => 3.0.6
+Spring boot >== 3.0.6
+
 Maven
+
 Java 17
