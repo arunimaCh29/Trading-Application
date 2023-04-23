@@ -10,6 +10,8 @@ import com.app.trading.Isignal.SignalHandler;
 @Service
 public class ApplicationService implements SignalHandler{
 
+	/*
+	 * Creating a Map of signals(strategies) instances and its corresponding signal number*/
 	private Map<String, IAlgo> strategies;
 	  
 	  public ApplicationService(Map<String, IAlgo> strategies) {
