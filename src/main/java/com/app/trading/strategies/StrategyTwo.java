@@ -7,7 +7,7 @@ import com.app.trading.Isignal.SignalHandler;
 import com.app.trading.algorithm.Algo;
 
 @Component
-@Qualifier("two")
+@Qualifier("2")
 public class StrategyTwo implements SignalHandler{
 
 	@Override
