@@ -21,11 +21,11 @@ public class ApplicationController {
 	public ResponseEntity<String> processSignal(@PathVariable(value = "id") int signal) {
 
 		try {
-			service.signalProcessing(signal);
+			service.handleSignal(signal);
 			return new ResponseEntity<String>("Signal Processed", HttpStatus.OK);
 
 		} catch (IllegalArgumentException e) {
-			return new ResponseEntity<String>("Signal Not Processed", HttpStatus.EXPECTATION_FAILED);
+			return new ResponseEntity<String>(e.getMessage(), HttpStatus.EXPECTATION_FAILED);
 
 		}
 	}
